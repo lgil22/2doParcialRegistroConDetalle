@@ -13,10 +13,11 @@ namespace _2doParcial
     /// </summary>
     public partial class App : Application
     {
- /*  void Application_DispatcherUnhandledEception(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs)
+   void Application_DispatcherUnhandledEception(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
-            //MessageBox.("error", $"Error en la aplicacion"){e.Exception.Message}",);
-        }*/
+            MessageBox.Show($"Ocurrio un error no controlado:\n {e.Exception.Message}");
+            e.Handled = true;
+        }
     }
 }
 

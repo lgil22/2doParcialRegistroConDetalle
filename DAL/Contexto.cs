@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+
+
 using _2doParcial.Entidades;
 
 namespace _2doParcial.DAL
@@ -14,5 +16,13 @@ namespace _2doParcial.DAL
             optionsBuilder.UseSqlite(@" Data Source = Users.db");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+    /* modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 1, Descripcion = "chocolate", Precio = 100 }); modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 2, Descripcion = "cafe", Precio = 100 });
+
+            modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 3, Descripcion = "arroz", Precio = 100 }); */
+
+        }
     }
 }
