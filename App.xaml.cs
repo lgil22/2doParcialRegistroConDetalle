@@ -15,9 +15,9 @@ namespace _2doParcial
     {
    void Application_DispatcherUnhandledEception(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
-            MessageBox.Show($"Ocurrio un error no controlado:\n {e.Exception.Message}");
+            MessageBox.Show("Error", $"😒Error en la aplicacio😭:\n {e.Exception.Message}");
             e.Handled = true;
         }
-    }
+    } 
 }
 
