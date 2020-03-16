@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2doParcial.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace _2doParcial
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            rRegistro rgtro = new rRegistro();
+            rgtro.Show();
         }
     }
 }

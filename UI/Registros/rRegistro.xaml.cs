@@ -17,9 +17,11 @@ namespace _2doParcial.UI.Registros
     /// </summary>
     public partial class rRegistro : Window
     {
+       
         public rRegistro()
         {
             InitializeComponent();
+  
         }
     }
 }

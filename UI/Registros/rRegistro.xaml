@@ -16,5 +16,35 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
 
+        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" 
+                Height="49" Margin="95,331,0,0" Grid.Row="1" VerticalAlignment="Top" Width="134">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Nuevo.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Center" 
+                Margin="0,331,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="144">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Guardar.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" 
+                Height="49" Margin="562,331,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Eliminar.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" 
+                Margin="562,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="56" Width="158">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Buscar.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+
+
+        </Button>
+
     </Grid>
 </Window>
