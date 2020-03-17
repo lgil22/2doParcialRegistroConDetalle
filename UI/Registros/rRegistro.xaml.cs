@@ -34,9 +34,8 @@ namespace _2doParcial.UI.Registros
         private void Limpiar()
         {
             this.llamadas = new Llamadas();
-            IdTextBox.Text = "0";
-            DescripcionTextBox.Text = string.Empty;
-            this.Detalles = new List<LlamadasDetalle>();
+            DetalleDataGrid.ItemsSource = new List<LlamadasDetalle>();
+            Refrescar();
         }
 
         private void CargarGrid()
