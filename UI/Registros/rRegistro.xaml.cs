@@ -21,8 +21,8 @@ namespace _2doParcial.UI.Registros
         {
             InitializeComponent();
             this.Detalles = new List<LlamadasDetalle>();
+           
             this.DataContext = llamadas;
-         //   CargarGrid();
 
         }
 
@@ -38,11 +38,6 @@ namespace _2doParcial.UI.Registros
             Refrescar();
         }
 
-        private void CargarGrid()
-        {
-            DetalleDataGrid.ItemsSource = null;
-            DetalleDataGrid.ItemsSource = Detalles;
-        }
 
         private void GuardarButton_Click(object sender, RoutedEventArgs e)
         {
@@ -115,7 +110,7 @@ namespace _2doParcial.UI.Registros
                 Problema = ProblemaTextBox.Text,
                 Solucion = SolucionTextBox.Text,
             });
-            CargarGrid();
+            Refrescar();
             ProblemaTextBox.Focus();
             ProblemaTextBox.Clear();
             SolucionTextBox.Clear();
@@ -145,7 +140,7 @@ namespace _2doParcial.UI.Registros
             {
                 //remover la fila
                 Detalles.RemoveAt(DetalleDataGrid.SelectedIndex);
-               CargarGrid();
+               Refrescar();
             }
         }
 
