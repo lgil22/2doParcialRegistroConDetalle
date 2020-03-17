@@ -9,7 +9,7 @@
     <Grid>
         <Menu>
             <MenuItem Header="Registros" Click="MenuItem_Click_1">
-                <MenuItem Header="Usuarios"/>
+                <MenuItem Header="Llamadas"/>
             </MenuItem>
         </Menu>
 
