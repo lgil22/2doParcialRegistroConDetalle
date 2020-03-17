@@ -19,9 +19,8 @@ namespace _2doParcial.DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-    /* modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 1, Descripcion = "chocolate", Precio = 100 }); modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 2, Descripcion = "cafe", Precio = 100 });
-
-            modelBuilder.Entity<Productos>().HasData(new Productos { ProductoId = 3, Descripcion = "arroz", Precio = 100 }); */
+           modelBuilder.Entity<Llamadas>().HasData(new Llamadas { LlamadaId = 1, Descripcion = "Saliente"});
+           modelBuilder.Entity<Llamadas>().HasData(new Llamadas { LlamadaId = 2, Descripcion = "Entrante" });
 
         }
     }

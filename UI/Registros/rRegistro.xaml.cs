@@ -40,7 +40,7 @@ namespace _2doParcial.UI.Registros
 
         }
 
-        private Llamadas LlenaClase()
+       /* private Llamadas LlenaClase()
         {
             Llamadas llamadas = new Llamadas();
             llamadas.LlamadaId = Convert.ToInt32(IdTextBox.Text);
@@ -49,14 +49,15 @@ namespace _2doParcial.UI.Registros
             llamadas.Detalles = this.Detalles;
 
             return llamadas;
-        }
-        private void LlenaCampo(Llamadas llamadas)
+        }*/
+
+       /* private void LlenaCampo(Llamadas llamadas)
         {
             IdTextBox.Text = Convert.ToString(llamadas.LlamadaId);
             DescripcionTextBox.Text = llamadas.Descripcion;
             this.Detalles = llamadas.Detalles;
             CargarGrid();
-        }
+        }*/
 
 
         private void CargarGrid()
@@ -70,10 +71,10 @@ namespace _2doParcial.UI.Registros
             Llamadas llamadas;
             bool paso = false;
 
-            if (!Validar())
-                return;
+           // if (!Validar())
+            //    return;
 
-            llamadas = LlenaClase ();
+           // llamadas = LlenaClase ();
             Limpiar();
 
             //Determinar si es guardar o modificar
