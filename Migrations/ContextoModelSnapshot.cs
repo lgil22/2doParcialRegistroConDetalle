@@ -27,6 +27,18 @@ namespace _2doParcial.Migrations
                     b.HasKey("LlamadaId");
 
                     b.ToTable("Llamadas");
+
+                    b.HasData(
+                        new
+                        {
+                            LlamadaId = 1,
+                            Descripcion = "Saliente"
+                        },
+                        new
+                        {
+                            LlamadaId = 2,
+                            Descripcion = "Entrante"
+                        });
                 });
 
             modelBuilder.Entity("_2doParcial.Entidades.LlamadasDetalle", b =>

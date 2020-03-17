@@ -8,7 +8,7 @@ using _2doParcial.DAL;
 namespace _2doParcial.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200316224723_Inicial")]
+    [Migration("20200317043059_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,6 +29,18 @@ namespace _2doParcial.Migrations
                     b.HasKey("LlamadaId");
 
                     b.ToTable("Llamadas");
+
+                    b.HasData(
+                        new
+                        {
+                            LlamadaId = 1,
+                            Descripcion = "Saliente"
+                        },
+                        new
+                        {
+                            LlamadaId = 2,
+                            Descripcion = "Entrante"
+                        });
                 });
 
             modelBuilder.Entity("_2doParcial.Entidades.LlamadasDetalle", b =>

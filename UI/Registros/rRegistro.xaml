@@ -18,7 +18,7 @@
         </Grid.ColumnDefinitions>
 
         <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" 
-                Height="49" Margin="109,537,0,0" Grid.Row="1" VerticalAlignment="Top" Width="134">
+                Height="49" Margin="109,537,0,0" Grid.Row="1" VerticalAlignment="Top" Width="134" Click="NuevoButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/Nuevo.png" Stretch="Uniform" AlignmentX="Left" />
             </Button.Background>

@@ -37,6 +37,16 @@ namespace _2doParcial.Migrations
                         principalColumn: "LlamadaId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Llamadas",
+                columns: new[] { "LlamadaId", "Descripcion" },
+                values: new object[] { 1, "Saliente" });
+
+            migrationBuilder.InsertData(
+                table: "Llamadas",
+                columns: new[] { "LlamadaId", "Descripcion" },
+                values: new object[] { 2, "Entrante" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
