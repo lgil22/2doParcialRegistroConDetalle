@@ -86,12 +86,12 @@ namespace _2doParcial.BLL
 
         public static Llamadas Buscar(int id)
         {
-           Llamadas orden = new Llamadas();
+           Llamadas llamadas = new Llamadas();
             Contexto db = new Contexto();
 
             try
             {
-                orden = db.Llamadas.Where(x => x.LlamadaId == id).
+                llamadas = db.Llamadas.Where(x => x.LlamadaId == id).
                      Include(y => y.Detalles).SingleOrDefault();
             }
             catch (Exception)
@@ -103,7 +103,7 @@ namespace _2doParcial.BLL
             {
                 db.Dispose();
             }
-            return orden;
+            return llamadas;
         }
 
         public static List<Llamadas> GetList(Expression<Func<Llamadas, bool>> llamada)
