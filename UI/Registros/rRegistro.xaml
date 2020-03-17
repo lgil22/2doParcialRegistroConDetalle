@@ -25,21 +25,21 @@
         </Button>
 
         <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" 
-                Margin="332,537,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="144">
+                Margin="332,537,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="144" Click="GuardarButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/Guardar.png" Stretch="Uniform" AlignmentX="Left" />
             </Button.Background>
         </Button>
 
         <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" 
-                Height="49" Margin="560,537,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" RenderTransformOrigin="1.507,6.659">
+                Height="49" Margin="560,537,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" RenderTransformOrigin="1.507,6.659" Click="EliminarButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/Eliminar.png" Stretch="Uniform" AlignmentX="Left" />
             </Button.Background>
         </Button>
 
         <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" 
-                Margin="285,20,0,0" VerticalAlignment="Top" Height="40" Width="115" Grid.RowSpan="2">
+                Margin="285,20,0,0" VerticalAlignment="Top" Height="40" Width="115" Grid.RowSpan="2" Click="BuscarButton_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Resources/Buscar.png" Stretch="Uniform" AlignmentX="Left" />
             </Button.Background>
@@ -100,8 +100,8 @@
         </TextBox>
     
         <Button x:Name="AgregarButton" Content="Agregar" HorizontalAlignment="Left" Margin="576,139,0,0" 
-               Grid.Row="1" VerticalAlignment="Top" Height="32" Width="85"/>
+               Grid.Row="1" VerticalAlignment="Top" Height="32" Width="85" Click="AgregarButton_Click"/>
         <Button x:Name="RemoverButton" Content="Remover" HorizontalAlignment="Left" Margin="14,447,0,0" 
-                Grid.Row="1" VerticalAlignment="Top" Height="28" Width="74"/>
+                Grid.Row="1" VerticalAlignment="Top" Height="28" Width="74" Click="RemoverButton_Click"/>
     </Grid>
 </Window>
