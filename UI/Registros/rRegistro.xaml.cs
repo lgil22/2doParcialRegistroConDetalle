@@ -13,6 +13,7 @@ namespace _2doParcial.UI.Registros
     public partial class rRegistro : Window
     {
         public List<LlamadasDetalle> Detalles { get; set; }
+
         Llamadas llamadas = new Llamadas(); /// Instancia para Bindings <summary>
         /// 
         /// </summary>
@@ -37,26 +38,6 @@ namespace _2doParcial.UI.Registros
             DescripcionTextBox.Text = string.Empty;
             this.Detalles = new List<LlamadasDetalle>();
         }
-
-       /* private Llamadas LlenaClase()
-        {
-            Llamadas llamadas = new Llamadas();
-            llamadas.LlamadaId = Convert.ToInt32(IdTextBox.Text);
-            llamadas.Descripcion = DescripcionTextBox.Text;
-
-            llamadas.Detalles = this.Detalles;
-
-            return llamadas;
-        }*/
-
-       /* private void LlenaCampo(Llamadas llamadas)
-        {
-            IdTextBox.Text = Convert.ToString(llamadas.LlamadaId);
-            DescripcionTextBox.Text = llamadas.Descripcion;
-            this.Detalles = llamadas.Detalles;
-            CargarGrid();
-        }*/
-
 
         private void CargarGrid()
         {
@@ -145,36 +126,19 @@ namespace _2doParcial.UI.Registros
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
-            /* Llamadas llamadaAnterior = LlamadasBLL.Buscar(llamadas.LlamadaId);
+             Llamadas llamadaAnterior = LlamadasBLL.Buscar(llamadas.LlamadaId);
 
-             if (llamadaAnterior != null)
-             {
-                 llamadas = llamadaAnterior;
-                 Refrescar();
-             }
-             else
-             {
-                 Limpiar();
-                 MessageBox.Show("Llamada no encontrada");
-             }*/
-
-            int id;
-            Llamadas llamadas = new Llamadas();
-            int.TryParse(IdTextBox.Text, out id);
-
-            llamadas = LlamadasBLL.Buscar(id);
-
-            if (llamadas != null)
-            {
-                MessageBox.Show("Llamada Encontrada");
-                this.DataContext = llamadas;
-                Refrescar();
-            }
-
-            else
-            {
-                MessageBox.Show("Llamada no Encontrada");
-            }
+               if (llamadaAnterior != null)
+               {
+               MessageBox.Show("Llamada Encontrada");
+                   llamadas = llamadaAnterior;
+                   Refrescar();
+               }
+               else
+               {
+                   Limpiar();
+                   MessageBox.Show("Llamada no encontrada");
+               }
 
         }
 
