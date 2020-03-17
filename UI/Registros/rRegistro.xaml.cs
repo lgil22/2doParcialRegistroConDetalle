@@ -51,7 +51,7 @@ namespace _2doParcial.UI.Registros
             if (!Validar())
                 return;
 
-        //    Limpiar();
+            Limpiar();
 
             //Determinar si es guardar o modificar
 
