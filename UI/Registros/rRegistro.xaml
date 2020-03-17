@@ -52,9 +52,10 @@
         <GroupBox x:Name="LlamadasGroupBox" Header="Llamadas" Grid.Row="1" Margin="10,121,0,110" HorizontalAlignment="Left" Width="708">
             <DataGrid x:Name="DetalleDataGrid" Height="257"/>
         </GroupBox>
+
         <Label x:Name="ProblemaLabel" Content="Problema:" HorizontalAlignment="Left" Margin="14,145,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74"/>
         <Label x:Name="SolucionLabel" Content="Solucion:" HorizontalAlignment="Left" Margin="324,145,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60"/>
-        
+
         <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="87,4,0,0" Grid.Row="1" 
                  TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
             <TextBox.Text>
@@ -64,17 +65,17 @@
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>
-            </TextBox>
+        </TextBox>
 
         <TextBox x:Name="DescripcionTextBox" HorizontalAlignment="Left" Margin="87,65,0,0" Grid.Row="1"
                  TextWrapping="Wrap" VerticalAlignment="Top" Width="139">
-          <TextBox.Text>
-            <Binding Path="Descripcion" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
-                <Binding.ValidationRules>
-                    <ExceptionValidationRule/>
-                </Binding.ValidationRules>
-            </Binding>
-        </TextBox.Text>
+            <TextBox.Text>
+                <Binding Path="Descripcion" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
         </TextBox>
 
         <TextBox x:Name="ProblemaTextBox" HorizontalAlignment="Left" Height="18" Margin="86,149,0,0" Grid.Row="1" 
@@ -87,21 +88,31 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        
+
         <TextBox x:Name="SolucionTextBox" HorizontalAlignment="Left" Margin="389,149,0,0" Grid.Row="1" 
                  TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
-        <TextBox.Text>
-            <Binding Path="Solucion" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
-                <Binding.ValidationRules>
-                    <ExceptionValidationRule/>
-                </Binding.ValidationRules>
-            </Binding>
-        </TextBox.Text>
+            <TextBox.Text>
+                <Binding Path="Solucion" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
         </TextBox>
-    
+
         <Button x:Name="AgregarButton" Content="Agregar" HorizontalAlignment="Left" Margin="576,139,0,0" 
-               Grid.Row="1" VerticalAlignment="Top" Height="32" Width="85" Click="AgregarButton_Click"/>
+               Grid.Row="1" VerticalAlignment="Top" Height="32" Width="109" Click="AgregarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Mas.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+
         <Button x:Name="RemoverButton" Content="Remover" HorizontalAlignment="Left" Margin="14,447,0,0" 
-                Grid.Row="1" VerticalAlignment="Top" Height="28" Width="74" Click="RemoverButton_Click"/>
+                Grid.Row="1" VerticalAlignment="Top" Height="28" Width="106" Click="RemoverButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Remover.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>
