@@ -93,6 +93,16 @@ namespace _2doParcial.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] House {
+            get {
+                object obj = ResourceManager.GetObject("House", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Mas {
             get {
                 object obj = ResourceManager.GetObject("Mas", resourceCulture);
@@ -116,6 +126,16 @@ namespace _2doParcial.Properties {
         internal static byte[] Remover {
             get {
                 object obj = ResourceManager.GetObject("Remover", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Telefono {
+            get {
+                object obj = ResourceManager.GetObject("Telefono", resourceCulture);
                 return ((byte[])(obj));
             }
         }

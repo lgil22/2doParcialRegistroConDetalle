@@ -127,6 +127,9 @@
   <data name="Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Guardar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="House" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\House.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Mas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mas.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -135,5 +138,8 @@
   </data>
   <data name="Remover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Remover.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Telefono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Telefono.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

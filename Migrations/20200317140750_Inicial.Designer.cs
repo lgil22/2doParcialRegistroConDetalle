@@ -8,7 +8,7 @@ using _2doParcial.DAL;
 namespace _2doParcial.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200317043059_Inicial")]
+    [Migration("20200317140750_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -41,7 +41,7 @@ namespace _2doParcial.UI.Registros
         private void CargarGrid()
         {
             DetalleDataGrid.ItemsSource = null;
-            DetalleDataGrid.ItemsSource = this.Detalles;
+            DetalleDataGrid.ItemsSource = Detalles;
         }
 
         private void GuardarButton_Click(object sender, RoutedEventArgs e)
@@ -108,14 +108,12 @@ namespace _2doParcial.UI.Registros
             }
 
             //Agregar un nuevo detalle con los datos introducidos
+          
             this.Detalles.Add(new LlamadasDetalle
             {
                 id = IdTextBox.Text.ToInt(),
                 Problema = ProblemaTextBox.Text,
                 Solucion = SolucionTextBox.Text,
-                
-
-
             });
             CargarGrid();
             ProblemaTextBox.Focus();
