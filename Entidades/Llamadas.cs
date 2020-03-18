@@ -14,7 +14,7 @@ namespace _2doParcial.Entidades
 
         [ForeignKey("id")]
 
-        public virtual List<LlamadasDetalle> Detalles { get; set; } = new List<LlamadasDetalle>();
+        public virtual List<LlamadasDetalle> Detalles { get; set; }
         public Llamadas()
         {
             LlamadaId = 0;

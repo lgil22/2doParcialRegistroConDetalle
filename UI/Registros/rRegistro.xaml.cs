@@ -109,7 +109,7 @@ namespace _2doParcial.UI.Registros
                 Problema = ProblemaTextBox.Text,
                 Solucion = SolucionTextBox.Text,
             });
-            Refrescar();
+           Refrescar();
            ProblemaTextBox.Focus();
            ProblemaTextBox.Clear();
            SolucionTextBox.Clear();
@@ -138,7 +138,7 @@ namespace _2doParcial.UI.Registros
             if (DetalleDataGrid.Items.Count > 0 && DetalleDataGrid.SelectedItem != null)
             {
                 //remover la fila
-                llamadas.Detalles.RemoveAt(DetalleDataGrid.SelectedIndex);
+               llamadas.Detalles.RemoveAt(DetalleDataGrid.SelectedIndex);
                Refrescar();
             }
         }
