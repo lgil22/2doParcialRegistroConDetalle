@@ -19,10 +19,7 @@ namespace _2doParcial.UI.Registros
         public rRegistro()
         {
             InitializeComponent();
-        //   this.llamadas.Detalles = new List<LlamadasDetalle>();
-           
             this.DataContext = llamadas;
-
         }
 
         private void Refrescar()
@@ -36,7 +33,6 @@ namespace _2doParcial.UI.Registros
             DetalleDataGrid.ItemsSource = new List<LlamadasDetalle>();
             Refrescar();
         }
-
 
         private void GuardarButton_Click(object sender, RoutedEventArgs e)
         {
