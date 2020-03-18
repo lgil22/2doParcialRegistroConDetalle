@@ -12,7 +12,6 @@ namespace _2doParcial.UI.Registros
     /// </summary>
     public partial class rRegistro : Window
     {
-        public List<LlamadasDetalle> Detalles { get; set; }
 
         Llamadas llamadas = new Llamadas(); /// Instancia para Bindings <summary>
         /// 
@@ -20,7 +19,7 @@ namespace _2doParcial.UI.Registros
         public rRegistro()
         {
             InitializeComponent();
-            this.Detalles = new List<LlamadasDetalle>();
+        //   this.llamadas.Detalles = new List<LlamadasDetalle>();
            
             this.DataContext = llamadas;
 
@@ -85,7 +84,7 @@ namespace _2doParcial.UI.Registros
                 DescripcionTextBox.Focus();
                 paso = false;
             }
-            if (this.Detalles.Count == 0)
+            if (this.llamadas.Detalles.Count == 0)
             {
                 MessageBox.Show("Debe agregar una Llamada", "Aviso", MessageBoxButton.OKCancel, MessageBoxImage.Information);
                 ProblemaTextBox.Focus();
@@ -99,21 +98,21 @@ namespace _2doParcial.UI.Registros
         {
             if (DetalleDataGrid.ItemsSource != null)
             {
-                this.Detalles = (List<LlamadasDetalle>)DetalleDataGrid.ItemsSource;
+                this.llamadas.Detalles = (List<LlamadasDetalle>)DetalleDataGrid.ItemsSource;
             }
 
             //Agregar un nuevo detalle con los datos introducidos
-          
-            this.Detalles.Add(new LlamadasDetalle
+
+            this.llamadas.Detalles.Add(new LlamadasDetalle
             {
                 id = IdTextBox.Text.ToInt(),
                 Problema = ProblemaTextBox.Text,
                 Solucion = SolucionTextBox.Text,
             });
             Refrescar();
-            ProblemaTextBox.Focus();
-            ProblemaTextBox.Clear();
-            SolucionTextBox.Clear();
+           ProblemaTextBox.Focus();
+           ProblemaTextBox.Clear();
+           SolucionTextBox.Clear();
         }
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
@@ -139,7 +138,7 @@ namespace _2doParcial.UI.Registros
             if (DetalleDataGrid.Items.Count > 0 && DetalleDataGrid.SelectedItem != null)
             {
                 //remover la fila
-                Detalles.RemoveAt(DetalleDataGrid.SelectedIndex);
+                llamadas.Detalles.RemoveAt(DetalleDataGrid.SelectedIndex);
                Refrescar();
             }
         }

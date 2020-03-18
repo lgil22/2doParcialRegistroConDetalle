@@ -48,6 +48,7 @@
         <Label Content="Label" HorizontalAlignment="Center" Height="7" Grid.Row="1" VerticalAlignment="Center" Width="0"/>
         <Label x:Name="IdLabel" Content="Id" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.RowSpan="2"/>
         <Label x:Name="DescripcionLabel" Content="Descripcion" HorizontalAlignment="Left" Margin="10,57,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-2.843,0.18" Height="26" Width="78"/>
+        
         <GroupBox x:Name="LlamadasGroupBox" Header="Llamadas" Grid.Row="1" Margin="10,121,0,110" HorizontalAlignment="Left" Width="708">
 
             <DataGrid x:Name="DetalleDataGrid" Grid.Row="4" Grid.ColumnSpan="3" Height="238" Margin="10,0,10,0">
